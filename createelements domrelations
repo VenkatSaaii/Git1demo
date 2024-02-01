@@ -1,0 +1,29 @@
+// Write your code below:
+//1.for first one u have to create h3,insert the text, and push it .
+//after that get div by tag name select 1st one and push the subhead to the ist div and change the fontstyle to italic
+const subhead=document.createElement('h3');
+const headText= document.createTextNode('Buy high quality organic fruits online');
+subhead.appendChild(headText);
+
+const divs = document.getElementsByTagName('div');
+const firstdiv= divs[0];
+firstdiv.appendChild(subhead);
+subhead.style.fontStyle='italic';
+
+//2.for the second div u have to create element and text and push it in the para and 
+//create the second div by selecting 2nd element and select the ul lit by query selector and insert before it
+const para= document.createElement('p');
+const paraText= document.createTextNode('Total fruits: 4');
+//3.for setting the id =>para.id='fruits-total';
+para.appendChild(paraText);
+
+const divi = document.getElementsByTagName('div');
+const seconddiv= divs[1];
+
+//(for insertting last element)seconddiv.appendChild(para);
+
+const fruits=document.querySelector('.fruits');
+seconddiv.insertBefore(para,fruits);
+//3.for setting the id =>para.id='fruits-total';
+para.id='fruits-total';
+
