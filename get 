@@ -1,0 +1,41 @@
+ const MainHeading= document.querySelector('#main-heading')
+MainHeading.style.textAlign='right';
+
+
+const fruits= document.querySelector('.fruits');
+fruits.style.backgroundColor='gray';
+fruits.style.padding='30px';
+fruits.style.margin='30px';
+fruits.style.width='50%';
+fruits.style.borderRadius='5px';
+fruits.style.listStyleType='none';
+
+const BasketHeading=document.querySelector('#basket-heading')
+BasketHeading.style.color='brown';
+BasketHeading.style.marginLeft='30px';
+
+const fruitItems=document.querySelectorAll('.fruit');
+for(let i=0;i<fruitItems.length;i++){
+fruitItems[i].style.backgroundColor='white';
+fruitItems[i].style.padding='10px';
+fruitItems[i].style.margin='10px';
+fruitItems[i].style.borderRadius='5px';
+}
+
+
+
+
+
+const Evenfruititems=document.querySelectorAll('.fruit:nth-child(even)')
+for(let i=0;i<Evenfruititems.length;i++)
+  {
+    Evenfruititems[i].style.backgroundColor='brown';
+    
+  }
+
+const Evenfruititem=document.querySelectorAll('.fruit:nth-child(even)')
+for(let i=0;i<Evenfruititem.length;i++)
+  {
+    Evenfruititems[i].style.color='white'
+    
+  }
